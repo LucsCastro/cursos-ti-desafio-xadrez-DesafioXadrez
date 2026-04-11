@@ -1,5 +1,7 @@
 #include <stdio.h>
 int main(){
+
+    int cavaloMovimento = 1; // Variável para controlar o movimento do cavalo
     
 //For e printf para a torre
   printf("Movimento da Torre:\n");
@@ -24,6 +26,21 @@ printf("\n"); //Quebra de linha para organizar a saída
         printf("Esquerda\n", r);
         r++;
     } while(r < 8);
+
+printf("\n"); //Quebra de linha para organizar a saída
+
+//for alinhado e printf para o cavalo
+  printf("Movimento do Cavalo:\n");
+    while (cavaloMovimento--)
+    {
+      for (int cm = 0; cm < 2; cm++)
+      {
+        printf("Baixo\n");
+      }
+      
+      printf("Esquerda\n");
+   
+    }
 
 return 0;
 }   
